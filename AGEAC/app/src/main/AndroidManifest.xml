@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.research.ageac.gamified">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".Launcher"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SingleChoiceQuizActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProgressStatisticsActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StagesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StageInstructionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShopActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AssignmentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LifeAndTimerGeneratorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TrueFalseQuizActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserRegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LeaderboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TopicsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BeginnersLeaderboardActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

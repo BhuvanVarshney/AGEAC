@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AGEAC</string>
+
+    <string name="title_activity_launcher">Launcher</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="continue_quiz_text">You just ran out of time...\nChoose one of the timers to continue with quiz</string>
+    <string name="use_extra_life_resume_text">You answered the question wrong...\nYou still can continue by using 1 extra life</string>
+    <string name="assignments">Assignments</string>
+    <string name="days_streak">Days Streak</string>
+    <string name="claim">Claim</string>
+    <string name="assignments_completed">Assignments Completed</string>
+    <string name="stages_completed">Stages Completed</string>
+    <string name="extra_lives_collected">Extra Lives Collected</string>
+    <string name="timers_collected">Timers Collected</string>
+
+</resources>

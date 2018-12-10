@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LifeAndTimerGeneratorActivity">
+
+    <LinearLayout
+        android:id="@+id/timer_generator_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/generator_back_btn"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:paddingLeft="8dp"
+            android:src="@drawable/back"
+            android:textSize="36sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="Regenerator"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timer_generator_header"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/heart" />
+
+                <TextView
+                    android:id="@+id/txtv_generator_extra_life_already_available"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="80dp"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:text="10"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtv_extra_life_time_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center_vertical"
+                    android:text="Dummy"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/btn_extra_life_collect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center_vertical"
+                    android:text="Collect"
+                    android:backgroundTint="#8bc34a"
+                    android:background="@android:drawable/btn_default"
+                    android:shadowColor="@android:color/white"
+                    android:shadowDx="-1"
+                    android:shadowDy="-1"
+                    android:shadowRadius="2"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/view_generator_bronze_timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/timer_bronze" />
+
+                <TextView
+                    android:id="@+id/txtv_generator_bronze_timer_already_available"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="80dp"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:text="10"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtv_bronze_timer_time_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center_vertical"
+                    android:text="Dummy"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/btn_bronze_timer_collect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center_vertical"
+                    android:text="Collect"
+                    android:backgroundTint="#8bc34a"
+                    android:background="@android:drawable/btn_default"
+                    android:shadowColor="@android:color/white"
+                    android:shadowDx="-1"
+                    android:shadowDy="-1"
+                    android:shadowRadius="2"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/view_generator_silver_timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/timer_silver" />
+
+                <TextView
+                    android:id="@+id/txtv_generator_silver_timer_already_available"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="80dp"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:text="10"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtv_silver_timer_time_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center_vertical"
+                    android:text="Dummy"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/btn_silver_timer_collect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center_vertical"
+                    android:text="Collect"
+                    android:backgroundTint="#8bc34a"
+                    android:background="@android:drawable/btn_default"
+                    android:shadowColor="@android:color/white"
+                    android:shadowDx="-1"
+                    android:shadowDy="-1"
+                    android:shadowRadius="2"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/view_generator_gold_timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/timer_gold" />
+
+                <TextView
+                    android:id="@+id/txtv_generator_gold_timer_already_available"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="80dp"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:text="10"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtv_gold_timer_time_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center_vertical"
+                    android:text="Dummy"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/btn_gold_timer_collect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center_vertical"
+                    android:text="Collect"
+                    android:backgroundTint="#8bc34a"
+                    android:background="@android:drawable/btn_default"
+                    android:shadowColor="@android:color/white"
+                    android:shadowDx="-1"
+                    android:shadowDy="-1"
+                    android:shadowRadius="2"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

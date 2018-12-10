@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SingleChoiceQuizActivity">
+
+    <LinearLayout
+        android:id="@+id/single_choice_quiz_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/single_choice_quiz_back_btn"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:paddingLeft="8dp"
+            android:src="@drawable/back"
+            android:textSize="36sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtv_single_choice_quiz_topic_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="10dp"
+                android:text="Level Name"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtv_single_choice_quiz_level_n_stage_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="10dp"
+                android:text="Stage 1"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/single_choice_quiz_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:paddingBottom="2dp"
+        android:paddingTop="3dp"
+        android:text="00:00"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/single_choice_quiz_question_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_horizontal"
+        android:paddingBottom="7dp"
+        android:paddingRight="5dp"
+        android:paddingTop="7dp"
+        android:text="10/10"
+        android:textSize="24sp"
+        android:textColor="#0091EA"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/single_choice_quiz_header"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/options_layout">
+
+            <ScrollView
+                android:id="@+id/question_scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:fadeScrollbars="false"
+                android:layout_marginBottom="10dp"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/single_choice_quiz_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="8dp"
+                    android:text="Which thing is alive?"
+                    android:textSize="18sp" />
+            </ScrollView>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/question_dialog_opener"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/options_layout"
+            android:layout_alignParentEnd="true"
+            android:background="@android:drawable/btn_default"
+            android:clickable="true"
+            android:src="@drawable/fullscreen" />
+
+        <LinearLayout
+            android:id="@+id/options_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp">
+
+            <Button
+                android:id="@+id/single_choice_quiz_choice1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0091EA"
+                android:gravity="left|center_vertical"
+                android:padding="8dp"
+                android:text="bird"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/single_choice_quiz_choice2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#0091EA"
+                android:gravity="left|center_vertical"
+                android:padding="8dp"
+                android:text="door"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/single_choice_quiz_choice3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#0091EA"
+                android:gravity="left|center_vertical"
+                android:padding="8dp"
+                android:text="rock"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/single_choice_quiz_choice4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#0091EA"
+                android:gravity="left|center_vertical"
+                android:padding="8dp"
+                android:text="rock"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

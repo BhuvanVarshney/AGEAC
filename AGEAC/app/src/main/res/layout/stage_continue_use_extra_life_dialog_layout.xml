@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_stage_use_extra_life"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="@string/use_extra_life_resume_text"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="15sp" />
+
+
+    <LinearLayout
+        android:id="@+id/body_stage_use_extra_life"
+        android:layout_below="@id/title_stage_use_extra_life"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp">
+
+        <TextView
+            android:id="@+id/dialog_use_xl_extra_lives_left"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:layout_marginBottom="5dp"
+            android:textStyle="italic"
+            android:textColor="#ffdab9"/>
+
+        <ImageButton
+            android:id="@+id/btn_use_xl_extra_life"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/circle_extra_life"
+            android:padding="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/heart" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="-1 XL"
+            android:textStyle="bold"
+            android:textColor="#ffdab9"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtv_quiz_use_extra_life_end_reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/body_stage_use_extra_life"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/holo_red_light"
+        android:text="End Quiz" />
+
+</RelativeLayout>
